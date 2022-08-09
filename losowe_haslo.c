@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+
+int main (int argc, char * argcv[])
+{
+
+   srand(time(NULL));
+
+   int oczekiwanyNumer;
+   char alfabet[] = (" qwertyuiopasdfghjklzxcvbnm", "QWERTYUIOPASDFGHJKLZXCVBNM", "1234567890")
+
+
+   printf("Jak wiele znaków ma mieć twoje hasło?\n");
+   scanf("%d", &oczekiwanyNumer);
+   char password[oczekiwanyNumer -1];
+
+   for(int i = 0; i < oczekiwanyNumer; i++)
+   {
+      haslo[i] = alfabet[rand() % strlen(alfabet)];  // losowo generowane hasło
+   }
+
+printf("%s", "Twoje hasło to: ", haslo);
+   return  0;
+}
